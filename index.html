@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HAI</title>
+</head>
+<body>
+    
+    <div id="content">
+        <p id="count" ></p>
+        <audio src="assets/screamer-jumpscare.mp3" id="screamVoice"></audio>
+        <img src="assets/hantu.jfif" alt="" id="hantu">
+        <button onclick="tombol()" class="tombol">KLIK JIKA GABUT</button>
+    </div>
+
+</body>
+
+<script>
+    let klik = 0;
+    let count = document.getElementById('count')
+    let hantu = document.getElementById('hantu')
+    let screamVoice = document.getElementById('screamVoice')
+
+    hantu.style.display = 'none';
+    function tombol(){
+        if(klik % 2 == 0){
+            console.log('ganjil')
+            klik += 1;
+            count.textContent = klik;
+        }
+        else if(klik %2 != 0){
+            console.log('genap')
+            klik += 1;
+            count.textContent = klik;
+        }
+
+        if(klik == 10){
+            hantu.style.display = 'block';
+            console.log('bisa')
+            screamVoice.play();
+            document.body.classList.toggle('dark')
+        }
+        
+    }
+</script>
+</html>
