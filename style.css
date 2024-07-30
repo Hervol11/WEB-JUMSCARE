@@ -3,10 +3,32 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 body{
-    background-color: white;
+    background-color: gray;
     color: black;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.restart{
+    text-decoration: none;
+    color: white;
+}
+
+.restart:hover{
+    background-color: blue;
+}
+
+.logo{
+    height: 20px;
 }
 
 .dark{
@@ -23,4 +45,21 @@ body{
 .tombol:hover{
     background-color: crimson;
     color: orange;
+}
+
+.warning{
+    display: flex;
+    text-align: center;
+    background-color: black;
+    color: red;
+    
+}
+h1{
+    background-color: black;
+    color: blue ;
+}
+
+.text{
+    color: yellow;
+    background-color: red;
 }
