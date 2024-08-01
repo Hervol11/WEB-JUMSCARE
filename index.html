@@ -13,7 +13,8 @@
     </nav>   
     <div id="content">
         <h1 id="ucapan">SELAMAT MENDENGARKAN</h1>
-        <p id="count" >0</p>
+        <div class="center-content">
+            <p id="count" >0</p>
         <audio src="assets/screamer-jumpscare.mp3" id="screamVoice">
         </audio>
         <audio src="assets/Djo - End of Beginning (Official Lyric Video)_EoVQ_TQFJy0.mp3" id="lagu1"></audio>
@@ -28,7 +29,7 @@
 
         <img src="assets/hantu.jfif" alt="" id="hantu">
         <button onclick="tombol1()" class="tombol" id="putarLagu">PUTAR LAGU</button>
-        <button onclick="tombol2()" class="tombol" id="tombol2">KEMBALI</button>
+        <button onclick="tombol2()" class="tombol" id="kembali">KEMBALI</button>
         <ul id="songList">
             <li>Rude</li>
             <li>Memories</li>
@@ -42,7 +43,10 @@
             <li>?</li>
         </ul>
         <p class="text" id="warning">PASTIKAN UNTUK ME-RESTART WEB SAAT SAMPAI NOMER 9 </p>
-        <H2 class="warning" id="announcement">NAIKKAN VOLUME UNTUK PENGALAMAN TERBAIK</H2>
+        </div>
+        <div class="footer">
+            <H2 class="warning" id="announcement">NAIKKAN VOLUME UNTUK PENGALAMAN TERBAIK</H2>
+        </div>
 
     </div>
 
@@ -68,13 +72,14 @@
     let warning = document.getElementById('warning')
     let putarLagu= document.getElementById('putarLagu')
     let pemberitahuan = document.getElementById('announcement')
+    let kembali = document.getElementById('kembali')
 
     hantu.style.display = 'none';
-    tombol2.style.display = 'none';
+    kembali.style.display = 'none';
 
     function tombol1(){
         klik += 1;
-
+        kembali.style.display = 'block';
         if(klik % 2 == 0){
             console.log('ganjil');
             count.textContent = klik;
@@ -84,26 +89,37 @@
             count.textContent = klik;
         }
         
+        if(klik == 0){
+            lagu1.pause()
+        }
 
         if(klik == 1){
+            lagu1.currentTime = 0;
             lagu1.play()
         }
         if(klik == 2){
+            lagu2.currentTime = 0;
             lagu2.play()
             lagu1.pause()
         }
         if(klik == 3){
+            lagu3.currentTime = 0;
             lagu3.play()
             lagu1.pause()
             lagu2.pause()
         }
         if(klik == 4){
+            // for (let i =1, i++) {
+            //     lagu(i).pause()
+            // }
+            lagu4.currentTime = 0;
             lagu4.play()
             lagu1.pause()
             lagu2.pause()
             lagu3.pause()
         }
         if(klik == 5){
+            lagu5.currentTime = 0;
             lagu5.play()
             lagu1.pause()
             lagu2.pause()
@@ -111,6 +127,7 @@
             lagu4.pause()
         }
         if(klik == 6){
+            lagu6.currentTime = 0;
             lagu6.play()
             lagu1.pause()
             lagu2.pause()
@@ -119,6 +136,7 @@
             lagu5.pause()
         }
         if(klik == 7){
+            lagu7.currentTime = 0;
             lagu7.play()
             lagu1.pause()
             lagu2.pause()
@@ -128,6 +146,7 @@
             lagu6.pause()
         }
         if(klik == 8){
+            lagu8.currentTime = 0;
             lagu8.play()
             lagu1.pause()
             lagu2.pause()
@@ -138,6 +157,7 @@
             lagu7.pause()
         }
         if(klik == 9){
+            lagu9.currentTime = 0;
             lagu9.play()
             lagu1.pause()
             lagu2.pause()
@@ -158,6 +178,7 @@
             pemberitahuan.style.display='none';
             putarLagu.style.display='none';
             count.style.display='none';
+            kembali.style.display="none";
             console.log('bisa')
             screamVoice.play();
             document.body.classList.toggle('dark')
@@ -170,8 +191,147 @@
             lagu7.pause()
             lagu8.pause()
             lagu9.pause()
+        }
+        return;
+    };
 
+    function tombol2(){
+        if (klik==1) {
+            kembali.style.display = 'none';
+        }
+        if (klik>0) {
+            klik -= 1;
+        }
+        count.textContent = klik;
 
+        if(klik == 0){
+            lagu1.pause()
+            lagu2.pause()
+            lagu3.pause()
+            lagu4.pause()
+            lagu5.pause()
+            lagu6.pause()
+            lagu7.pause()
+            lagu8.pause()
+            lagu9.pause()
+        }
+
+        if(klik == 1){
+            lagu1.currentTime = 0;
+
+            lagu1.play()
+            lagu2.pause()
+            lagu3.pause()
+            lagu4.pause()
+            lagu5.pause()
+            lagu6.pause()
+            lagu7.pause()
+            lagu8.pause()
+            lagu9.pause()
+        }
+        if(klik == 2){
+             lagu2.currentTime = 0;
+
+            lagu1.pause()
+            lagu2.play()
+            lagu3.pause()
+            lagu4.pause()
+            lagu5.pause()
+            lagu6.pause()
+            lagu7.pause()
+            lagu8.pause()
+            lagu9.pause()
+        }
+        if(klik == 3){
+            lagu3.currentTime = 0;
+
+            lagu1.pause()
+            lagu2.pause()
+            lagu3.play()
+            lagu4.pause()
+            lagu5.pause()
+            lagu6.pause()
+            lagu7.pause()
+            lagu8.pause()
+            lagu9.pause()
+        }
+        if(klik == 4){
+            lagu4.currentTime = 0;
+
+            lagu1.pause()
+            lagu2.pause()
+            lagu3.pause()
+            lagu4.play()
+            lagu5.pause()
+            lagu6.pause()
+            lagu7.pause()
+            lagu8.pause()
+            lagu9.pause()
+        }
+        if(klik == 5){
+            lagu5.currentTime = 0;
+
+            lagu1.pause()
+            lagu2.pause()
+            lagu3.pause()
+            lagu4.pause()
+            lagu5.play()
+            lagu6.pause()
+            lagu7.pause()
+            lagu8.pause()
+            lagu9.pause()
+        }
+        if(klik == 6){
+            lagu6.currentTime = 0;
+
+            lagu1.pause()
+            lagu2.pause()
+            lagu3.pause()
+            lagu4.pause()
+            lagu5.pause()
+            lagu6.play()
+            lagu7.pause()
+            lagu8.pause()
+            lagu9.pause()
+        }
+        if(klik == 7){
+            lagu7.currentTime = 0;
+
+            lagu1.pause()
+            lagu2.pause()
+            lagu3.pause()
+            lagu4.pause()
+            lagu5.pause()
+            lagu6.pause()
+            lagu7.play()
+            lagu8.pause()
+            lagu9.pause()
+        }
+        if(klik == 8){
+            lagu8.currentTime = 0;
+
+            lagu1.pause()
+            lagu2.pause()
+            lagu3.pause()
+            lagu4.pause()
+            lagu5.pause()
+            lagu6.pause()
+            lagu7.pause()
+            lagu8.play()
+            lagu9.pause()
+        }
+        if(klik == 9){
+            lagu9.currentTime = 0;
+
+            lagu1.pause()
+            lagu2.pause()
+            lagu3.pause()
+            lagu4.pause()
+            lagu5.pause()
+            lagu6.pause()
+            lagu7.pause()
+            lagu8.pause()
+            lagu9.play()
         }
     }
 
