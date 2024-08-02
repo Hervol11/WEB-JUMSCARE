@@ -1,84 +1,118 @@
-#content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-body{
-    background-color: white;
-    color: black;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100vh;
 }
 
-nav{
-    color: white;
-    background-color: black;
-    font-weight: bold;
-    height: 5vh;
+body {
+    background-color: white; /* Warna latar belakang putih */
+    color: black; /* Warna teks hitam */
+    margin: auto;
+    padding: auto;
 }
 
-.restart{
-    text-decoration: none;
-    color: white;
-}
-
-.restart:hover{
-    background-color: blue;
-}
-
-.logo{
-    height: 20px;
-}
-
-.dark{
-    background-color: black;
-    color: white;
-}
-
-.tombol{
-    color: yellow;
-    font-weight: bold;
-    background-color: blue;
-}
-
-.tombol:hover{
-    background-color: skyblue;
-    color: black;
-}
-
-.warning{
-    background-color: black;
-    color: yellow;
-    text-align: center;
-    height: 30vh;
-    width: 208vh;
-    
-}
-h1{
-    color: #0000E0 ;
-    height: 10vh;
-    padding: 20px;
-    
-}
-
-.text{
-    color: yellow;
-    background-color:#800000;
-}
-.center-content{
+#content{
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: center;
-    height: 55vh;
+    align-items: center;
 }
 
-.footer{
-    height: 30vh;
-    padding: 10px;
-    margin-top:10px ;
+.all {
+    height: 100vh; /* Tinggi elemen 100% dari tinggi viewport */
+    margin: auto;
+    padding: auto;
+}
+
+.navbar {
+    height: 5%; /* Tinggi navbar 5% dari tinggi viewport */
+    width: 100%; /* Lebar 100% */
+    margin-right: 0;
+    padding: 0;
+}
+
+nav {
+    color: white; /* Warna teks putih */
+    background-color: black; /* Warna latar belakang hitam */
+    font-weight: bold; /* Teks tebal */
+}
+
+.restart {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: white; /* Warna teks putih */
+}
+
+.restart:hover {
+    background-color: blue; /* Warna latar belakang biru saat hover */
+}
+
+.logo {
+    height: 20px; /* Tinggi logo 20px */
+}
+
+.dark {
+    background-color: black; /* Warna latar belakang hitam */
+    color: white; /* Warna teks putih */
+}
+
+#songList {
+    display: flex; /* Menampilkan elemen sebagai flexbox */
+    flex-direction: column; /* Susunan kolom */
+    justify-content: left; /* Rata kiri */
+    align-items: baseline; /* Elemen disejajarkan ke baseline */
+}
+
+.tombol {
+    color: yellow; /* Warna teks kuning */
+    font-weight: bold; /* Teks tebal */
+    background-color: blue; /* Warna latar belakang biru */
+    flex-direction: column; /* Susunan kolom */
+}
+
+.button {
+    display: flex; /* Menampilkan elemen sebagai flexbox */
+    justify-content: center; /* Rata tengah secara horizontal */
+    align-items: center; /* Rata tengah secara vertikal */
+    flex-direction: column; /* Susunan kolom */
+}
+
+.tombol:hover {
+    background-color: skyblue; /* Warna latar belakang biru langit saat hover */
+    color: black; /* Warna teks hitam saat hover */
+}
+
+.warning {
+    background-color: black; /* Warna latar belakang hitam */
+    color: yellow; /* Warna teks kuning */
+    text-align: center; /* Teks rata tengah */
+    height: 100%; /* Tinggi 100% */
+    width: 100%; /* Lebar 100% */
+}
+
+h1 {
+    color: #0000E0; /* Warna teks biru */
+    height: 10%; /* Tinggi 10% */
+    padding: 20px; /* Padding 20px */
+}
+
+.text {
+    color: yellow; /* Warna teks kuning */
+    background-color: #800000; /* Warna latar belakang merah marun */
+}
+
+.center-content {
+    display: flex; /* Menampilkan elemen sebagai flexbox */
+    flex-direction: column; /* Susunan kolom */
+    text-align: center; /* Teks rata tengah */
+    justify-content: center; /* Rata tengah secara vertikal */
+}
+
+.footer {
+    height: 30vh; /* Tinggi footer 30% dari tinggi viewport */
+    width: 100%; /* Lebar 100% */
+    padding: 0; /* Padding 10px */
+    margin-top: auto ; /* Margin atas 10px */
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 0;
 }

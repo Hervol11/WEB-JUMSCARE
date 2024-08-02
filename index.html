@@ -7,47 +7,57 @@
     <title>LAGU SAYA</title>
 </head>
 <body>
-    <nav id="navbar">
-        <img class="logo" src="assets/spinner.jpg" alt="">
-        <a href="#" class="restart" onclick="reRender()">RESTART</a>
-    </nav>   
-    <div id="content">
-        <h1 id="ucapan">SELAMAT MENDENGARKAN</h1>
-        <div class="center-content">
-            <p id="count" >0</p>
-        <audio src="assets/screamer-jumpscare.mp3" id="screamVoice">
-        </audio>
-        <audio src="assets/Djo - End of Beginning (Official Lyric Video)_EoVQ_TQFJy0.mp3" id="lagu1"></audio>
-        <audio src="assets/In The End [Official HD Music Video] - Linkin Park_eVTXPUF4Oz4.mp3" id="lagu2"></audio>
-        <audio src="assets/Keane - Somewhere Only We Know (Lyrics)_2lh_fR6aiL0.mp3" id="lagu3"></audio>
-        <audio src="assets/Lukas Graham - 7 Years [Official Music Video]_LHCob76kigA.mp3" id="lagu4"></audio>
-        <audio src="assets/MAGIC_ - Rude (Lyrics)_NoEMIVx4J78.mp3" id="lagu5"></audio>
-        <audio src="assets/Maroon 5 - Memories (Official Video)_SlPhMPnQ58k.mp3" id="lagu6"></audio>
-        <audio src="assets/Maroon 5 Ft. Wiz Khalifa - Payphone (Lyrics)_H_meGnWdMCM.mp3" id="lagu7"></audio>
-        <audio src="assets/STILL-THE-ONE.mp3" id="lagu8"></audio>
-        <audio src="assets/TALKING-TO-THE-MOON(BRUNO MARS).mp3" id="lagu9"></audio>
-
-        <img src="assets/hantu.jfif" alt="" id="hantu">
-        <button onclick="tombol1()" class="tombol" id="putarLagu">PUTAR LAGU</button>
-        <button onclick="tombol2()" class="tombol" id="kembali">KEMBALI</button>
-        <ul id="songList">
-            <li>Rude</li>
-            <li>Memories</li>
-            <li>Still The One</li>
-            <li>Somewhere Only We Know</li>
-            <li>End of Beginning</li>
-            <li>In The End</li>
-            <li>Payphone(agak lama)</li>
-            <li>7 Years</li>
-            <li>Talking To The Moon</li>
-            <li>?</li>
-        </ul>
-        <p class="text" id="warning">PASTIKAN UNTUK ME-RESTART WEB SAAT SAMPAI NOMER 9 </p>
+    <div class="all">
+        <div class="navbar">
+            <nav id="navbar">
+                <img class="logo" src="assets/spinner.jpg" alt="">
+                <a href="#" class="restart" onclick="reRender()">RESTART</a>
+            </nav>   
         </div>
-        <div class="footer">
-            <H2 class="warning" id="announcement">NAIKKAN VOLUME UNTUK PENGALAMAN TERBAIK</H2>
+        <div id="content">
+            <h1 id="ucapan">SELAMAT MENDENGARKAN</h1>
+            <div class="center-content">
+                <p id="count" >0</p>
+            <audio src="assets/screamer-jumpscare.mp3" id="screamVoice">
+            </audio>
+            <audio src="assets/Djo - End of Beginning (Official Lyric Video)_EoVQ_TQFJy0.mp3" id="lagu1"></audio>
+            <audio src="assets/In The End [Official HD Music Video] - Linkin Park_eVTXPUF4Oz4.mp3" id="lagu2"></audio>
+            <audio src="assets/Keane - Somewhere Only We Know (Lyrics)_2lh_fR6aiL0.mp3" id="lagu3"></audio>
+            <audio src="assets/Lukas Graham - 7 Years [Official Music Video]_LHCob76kigA.mp3" id="lagu4"></audio>
+            <audio src="assets/MAGIC_ - Rude (Lyrics)_NoEMIVx4J78.mp3" id="lagu5"></audio>
+            <audio src="assets/Maroon 5 - Memories (Official Video)_SlPhMPnQ58k.mp3" id="lagu6"></audio>
+            <audio src="assets/Maroon 5 Ft. Wiz Khalifa - Payphone (Lyrics)_H_meGnWdMCM.mp3" id="lagu7"></audio>
+            <audio src="assets/STILL-THE-ONE.mp3" id="lagu8"></audio>
+            <audio src="assets/TALKING-TO-THE-MOON(BRUNO MARS).mp3" id="lagu9"></audio>
+    
+            <img src="assets/hantu.jfif" alt="" id="hantu">
+            
+            <div class="button">
+                <button onclick="tombol1()" class="tombol" id="putarLagu">PUTAR LAGU</button>
+                
+                <button onclick="tombol2()" class="tombol" id="kembali">KEMBALI</button>
+            </div>
+            
+            <ul id="songList">
+                <li>Rude</li>
+                <li>Memories</li>
+                <li>Still The One</li>
+                <li>Somewhere Only We Know</li>
+                <li>End of Beginning</li>
+                <li>In The End</li>
+                <li>Payphone(agak lama)</li>
+                <li>7 Years</li>
+                <li>Talking To The Moon</li>
+                <li>?</li>
+            </ul>
+            <p class="text" id="warning">PASTIKAN UNTUK ME-RESTART WEB SAAT SAMPAI NOMER 9 </p>
+            </div>
+    
+            <div class="footer">
+                <H2 class="warning" id="announcement">NAIKKAN VOLUME UNTUK PENGALAMAN TERBAIK</H2>
+            </div>
         </div>
-
+    
     </div>
 
 </body>
