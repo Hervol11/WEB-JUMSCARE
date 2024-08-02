@@ -89,6 +89,10 @@ nav {
     width: 100%; /* Lebar 100% */
 }
 
+#hantu{
+    height: 1000px;
+}
+
 h1 {
     color: #0000E0; /* Warna teks biru */
     height: 10%; /* Tinggi 10% */
